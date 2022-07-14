@@ -47,6 +47,54 @@ fn main() {
 
 
 
+// f64 represents the sign of self 
+fn main() {
+    let x = 1_000.000_1; // f64
+    let y: f32 = 0.12; // f32
+    let z = 0.01_f64; // f64
+
+    println!("Success!");
+}
+
+
+//floating point numbers
+
+fn main() {
+    assert!(0.1_f32+0.2_f32==0.3_f32);
+}
+fn main() {
+    assert!((0.1_f64+ 0.2 - 0.3).abs() < 0.001);
+}
+
+
+//computations
+
+fn main() {
+    // Integer addition
+    assert!(1u32 + 2 == 3);
+
+    //  subtraction of integers
+    assert!(1i32 - 2 == -1);
+    assert!(1i8 - 2 == -1);
+    
+    assert!(3 * 50 == 150);
+
+    assert!(9 / 3 == 3); 
+
+    assert!(24 % 5 == 4);
+    assert!(true && false == false);
+    assert!(true || false == true);
+    assert!(!true == false);
+
+    // all bitwise operations
+    println!("0011 AND 0101 is {:04b}", 0b0011u32 & 0b0101);
+    println!("0011 OR 0101 is {:04b}", 0b0011u32 | 0b0101);
+    println!("0011 XOR 0101 is {:04b}", 0b0011u32 ^ 0b0101);
+    println!("1 << 5 is {}", 1u32 << 5);
+    println!("0x80 >> 2 is 0x{:x}", 0x80u32 >> 2);
+}
+
+
 
 
 
