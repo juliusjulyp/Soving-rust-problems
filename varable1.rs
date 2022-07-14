@@ -57,9 +57,7 @@ fn main() {
     x = 7;
     // Shadowing and re-binding
     x += 3;
-
-
-    let y = 4;
+ let y = 4;
     // Shadowing
     let y = "I can also be bound to text!"; 
 
@@ -67,8 +65,29 @@ fn main() {
 } 
     
     
+    //unused variable problem
     
     
+fn main() {
+    let x = 1; 
+    println! ("{}", x);
+}
+
+    
+    
+    //destructuring problem
+    
+    fn main() {
+    let (mut x, mut y) = (1, 3);
+    x += 2;
+
+    assert_eq!(x, 3);
+        //making the value of y to be 2
+    y -=1;
+    assert_eq!(y, 2);
+
+    println!("Success!");
+}
     
     
     
