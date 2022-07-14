@@ -31,3 +31,29 @@ fn main() {
 fn type_of<T>(_: &T) -> String {
     format!("{}", std::any::type_name::<T>())
 }
+
+
+
+//what equals max of i8 and also u8
+
+fn main() {
+    //the largest value that can be represented by i8 will be 127i8
+    assert_eq!(i8::MAX, 127i8); 
+     //the largest value that can be represented by u8 will be 255u8
+    assert_eq!(u8::MAX, 255u8); 
+
+    println!("Success!");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
