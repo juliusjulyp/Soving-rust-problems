@@ -32,3 +32,19 @@ fn main() {
     println!("The value of x is {} and value of y is {}", x, y); 
 }
     
+    
+    //shadowing
+    // made sure that when calling assert_eq! values should be the same
+    fn main() {
+    let x: i32 = 5;
+    {
+        let x = 12;
+        assert_eq!(x, 12);
+    }
+
+    assert_eq!(x, 5);
+
+    let x =  42;
+    println!("{}", x); // Prints "42".
+}
+
